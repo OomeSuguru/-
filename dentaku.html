@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>電卓アプリ</title>
+</head>
+<body>
+<form name="myForm">
+  <table bgcolor="#3969d6" border="5">
+    <tr>
+      <td align="center" colspan="4" bgcolor="#f80909">
+        <font color="#FFFFFF">
+          <strong>電卓アプリ</strong>
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"><input type="text" size="12" name="myLine" value="0"></td>
+      <td align="center"><input type="button" value="Ｃ" onclick="myC()"></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="button" value="7" onclick="myValue(7)"></td>
+      <td align="center"><input type="button" value="8" onclick="myValue(8)"></td>
+      <td align="center"><input type="button" value="9" onclick="myValue(9)"></td>
+      <td align="center"><input type="button" value="/" onclick="set('/')"></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="button" value="4" onclick="myValue(4)"></td>
+      <td align="center"><input type="button" value="5" onclick="myValue(5)"></td>
+      <td align="center"><input type="button" value="6" onclick="myValue(6)"></td>
+      <td align="center"><input type="button" value="*" onclick="set('*')"></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="button" value="1" onclick="myValue(1)"></td>
+      <td align="center"><input type="button" value="2" onclick="myValue(2)"></td>
+      <td align="center"><input type="button" value="3" onclick="myValue(3)"></td>
+      <td align="center"><input type="button" value="-" onclick="set('-')"></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="button" value="0" onclick="myValue(0)"></td>
+      <td align="center"><input type="button" value="." onclick="myValue('.')"></td>
+      <td align="center"><input type="button" value="=" onclick="set('=')"></td>
+      <td align="center"><input type="button" value="+" onclick="set('+')"></td>
+    </tr>
+  </table>
+</form>
+  <script src="dentaku.js"></script>
+</body>
+</html>
