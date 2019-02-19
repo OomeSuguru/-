@@ -18,7 +18,7 @@ function set(Data) {
     var myWork = sum + myCalc + myInput; //合計値 １度目に入力された値
     sum = eval(myWork) // 計算式を計算させる
     myInput = ""; //２度目の入力の際に画面のクリア
-    document.myForm.myLine.value = sum; //値を代入し表示
+    document.myForm.myLine.value = sum; // 合計を表示
   }
   if (Data == "=") {
     sum = 0;
